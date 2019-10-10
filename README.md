@@ -3,7 +3,7 @@
 E-commerce website<br>
 
 ## Web link
-see [STYLiSH](https://framweb-79896.firebaseapp.com/)
+see [STYLiSH](https://ssuchen.github.io/AppWorksSchool_STYLiSH/)
 
 ## Introduction
 * Responsive web design
