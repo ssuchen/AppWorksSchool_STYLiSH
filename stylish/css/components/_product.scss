@@ -1,0 +1,441 @@
+@mixin web-size {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @mixin tab-size {
+    @media (max-width: 875px) {
+      @content;
+    }
+  }
+  @mixin tab-size-s {
+    @media (max-width: 780px) {
+      @content;
+    }
+  }
+  @mixin tab-size-xs {
+    @media (max-width: 620px) {
+      @content;
+    }
+  }
+
+  @mixin phone-size {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+//---------------------------------------------------------------
+
+.product-content{
+
+    margin: 0 auto;
+    padding:5% 0;
+    max-width: 960px;
+    @include tab-size{
+        padding-right: 3%;
+        padding-left:3%; 
+    }
+    @include phone-size{
+        padding-right: 0%;
+        padding-left:0%; 
+    }
+ 
+}
+.clear-fix{
+     clear: both;
+}
+
+.product-list-left{
+    float: left;
+    width: 55%;
+@include tab-size-s{
+    width: 100%;
+    
+}
+
+}
+.product-list-right{
+    float: right;
+    width: 40%;
+    padding-left: 3%;
+@include tab-size-s{
+        width: 100%;
+}  
+
+
+    
+}
+.product-list-img{
+    
+    display:inline-block;
+    background-color:#bababa;
+    width:100%;
+    //height:746px;
+@include tab-size{
+    //max-height: 600px;
+}
+@include phone-size{
+    //height:450px ;
+}
+
+}
+.product-clothes-name{
+  padding-bottom: 6%; 
+  font-family: PingFangTC,Microsoft JhengHei;
+  font-size: 32px;
+  letter-spacing: 6.4px;
+  text-align: left;
+  color: #3f3a3a;
+  @include tab-size{
+    padding-bottom: 3%; 
+    padding-top: 3%; 
+  }
+  @include phone-size{
+      font-size:20px;
+      padding-right:6%;
+      padding-left: 6%;
+  }
+}
+.product-clothes-id{
+    width: 121px;
+    height: 24px;
+    font-family: PingFangTC,Microsoft JhengHei;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #bababa;
+    @include phone-size{
+    font-size:16px;
+    padding-right:6%;
+    padding-left: 6%;
+    }
+  
+}
+.product-clothes-price{
+    width: 124px;
+    height: 36px;
+    font-family: PingFangTC,Microsoft JhengHei;
+    font-size: 30px;
+    text-align: left;
+    color: #3f3a3a;
+    border-bottom: 1px solid;
+    padding:5% 0;
+    width: 100%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    @include tab-size{
+        margin-top:0;
+    }
+    @include phone-size{
+        width: 300px;
+        padding-bottom: 0;
+        font-size: 20px;
+        margin-left:6%; 
+    }
+    @media (max-width:320px) {
+        width: 280px;
+    }
+}
+
+.product-clothes-color-list{
+   float: left;
+    width: 100%;
+    padding:5% 0;
+    @include tab-size{
+        padding-top:0;
+    }
+    @include phone-size{
+        padding-bottom:0; 
+        box-sizing: border-box;
+        padding-right:6%;
+        padding-left: 6%;
+    }
+    h5{
+
+        padding-top: 10%;  
+        width: 72px;
+        height: 24px;
+        font-family: PingFangTC,Microsoft JhengHei;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-align: left;
+        color: #3f3a3a;   
+        @include phone-size{
+            font-size: 16px;
+        }
+    }
+    li{
+    float: left;
+    margin-right:3%;
+    @include phone-size{
+        margin-right:0%;
+    } 
+    }
+   
+.product-clothes-color{
+    box-sizing: border-box;
+   
+    width: 36px;
+    margin:0 3% 0 2%; 
+    height: 36px;
+    @include tab-size{
+        margin-right: 0.5%;
+    }
+   
+
+    div{
+       
+        margin: 0 auto;
+        margin-top:5px;
+        height: 24px;
+        width: 24px;
+        border:1px solid #b8b8b8;
+    }
+   
+}
+.product-clothes-color-click{
+    border:1px solid #979797;
+    
+  }
+ 
+}
+.product-clothes-size-list{
+    padding:5% 0;
+    float: left;
+    width: 100%;
+    height: 24px;
+    font-family: PingFangTC,Microsoft JhengHei;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #3f3a3a; 
+    @include tab-size{
+        padding-top: 0;
+    }
+    @include phone-size{
+        box-sizing: border-box;
+        padding:10% 6%;
+        margin-bottom:10%;
+        font-size:16px;   
+    }
+    h5{
+        padding-top: 10%;
+    }
+    li{
+    float: left;  
+    margin-right:3%;
+    @include tab-size{
+        margin-right:0.5%;
+    }
+    }
+}
+.product-clothes-size{
+    margin: 0 3%;
+    font-size:16px;
+    text-align: center;
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    letter-spacing:-1px;
+    border-radius: 34px;
+    background:#ececec;
+}
+.product-clothes-size-click{
+    background:#000;
+    color: #fff;
+}
+.product-clothes-Quantity{
+   padding:5% 0;
+   width: 100%;
+   float: left;
+   @include tab-size{
+    padding-top: 0;
+   }
+   @include phone-size{
+       box-sizing: border-box;
+       padding-right: 6%;
+       padding-left:6%;
+   }
+   li{
+   float: left;    
+   }
+h5{
+    padding-top: 10%;
+    width: 72px;
+    height: 24px;
+    font-family: PingFangTC,Microsoft JhengHei;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #3f3a3a; 
+   @include  tab-size-xs{
+       display: none;
+   }
+}
+}
+
+.disable-count{
+    background-color: #ececec;
+    color: gray;
+    border: 0px solid gray;
+}
+
+.product-clothes-Quantity-form{
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid gray;
+    width:160PX;
+    height: 44px;
+    padding: 0%;
+    text-align: center;
+    color:#8b572a;
+    @include tab-size{
+        width:312px;
+    }
+    
+    @media (max-width:374px) {
+        width:300px;
+    }
+    @media (max-width:374px) {
+        width:280px;
+    }
+  
+}   
+
+.Quantity-btn-add,.Quantity-btn-less{
+    font-size: 20px;
+    padding: 8% 10%;
+    @include tab-size{
+     padding: 3% 10%;
+    }
+   
+}
+
+
+
+//影藏按鈕預設值
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+// -webkit-appearance: none;
+// margin: 0;
+// }
+
+
+.Quantity-input{
+ padding-top:6%;
+  font-size: 18px;
+  text-align: center;
+  width: 60%;
+ border: 0;
+
+@media (max-width:875px){
+    padding-top:4.5%;
+}    
+    
+}
+.product-cart-btn-div{
+    width: 100%;
+    @include phone-size{
+        box-sizing: border-box;
+        padding-left: 6%;
+       padding-right: 6%; 
+    }
+}
+.product-cart-btn{
+    text-decoration: none;
+    text-align: center;
+    padding: 5% 0;
+    margin-bottom: 5%;
+    display: block;
+    border: solid 1px #000000;
+    background-color: #000000;
+    font-family: PingFangTC,Microsoft JhengHei;
+    color:#fff;
+    box-shadow: #979797 1px 2px 5px ;
+    &:hover{
+     background: #0f0f0f;   
+    }
+   &:active{
+    background-color: #000000;
+    box-shadow: #979797 1px 0px 5px ;
+   }
+    @include phone-size{
+        width: 312px;  
+    }  
+    @media(max-width:320px){
+        width: 280px;
+    }
+  
+}
+.product-center-img-top,.product-center-img-Below{
+    display:block;
+    background-color:rgb(180, 174, 174);
+    width:55%;
+    //height:681px;
+    @include tab-size{
+    width: 100%;
+    }
+    @include phone-size{
+        //height: 451px;
+    }
+}
+.product-center-title{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 5% ;
+    text-align: center;
+    h5{
+        font-family: PingFangTC,Microsoft JhengHei;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-align: left;
+        padding-top:2%;
+        color: #8b572a;
+        @include phone-size{
+            font-size: 16px;
+        }
+    }
+    hr{
+        width: 85%;
+        height: 1px;
+        @include tab-size-xs{
+            width: 70%;
+        }
+    }
+
+    }
+    .product-clothes-detail{
+        @include phone-size{
+            padding:0 6%;
+        }
+        div{
+         padding: 5% 0;
+        }
+        p{
+            color: #3f3a3a;
+            font-size: 20px;
+            font-family: PingFangTC,Microsoft JhengHei;
+            line-height:1.5rem;
+            @include phone-size{
+                font-size: 16px;
+            }
+        }
+        
+    }
+.product-center{
+    @include phone-size{
+       padding-right: 6%;
+       padding-left: 6%; 
+    }
+}
+// .product-center-img-top{
+//     //padding: 5% 0;
+
+// }
+// .product-center-img-Below{
+//    // padding: 5% 0;
+// }
+.product-center-content-top,.product-center-content-bottom{
+    padding: 5% 0;
+}
