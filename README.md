@@ -14,4 +14,4 @@ see [STYLiSH](https://framweb-79896.firebaseapp.com/)
 * Built website with infinite scroll
 * Used carousel slider to show different campaigns
 ## Image
-![image](https://github.com/ssuchen/FarmTourismWeb/blob/master/readme_img-001.jpg)
+![image](https://github.com/ssuchen/AppWorksSchool_STYLiSH/blob/master/readme_img-001.jpg)
