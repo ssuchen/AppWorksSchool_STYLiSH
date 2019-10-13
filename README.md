@@ -5,6 +5,15 @@ E-commerce website<br>
 ## Web link
 see [STYLiSH](https://ssuchen.github.io/AppWorksSchool_STYLiSH/)
 
+## Programming Language
+* JavaScritp
+## Fornt-End
+* HTML
+* CSS(SCSS)
+* AJAX
+## Third Party
+* Facebook SDK 
+* TapPay API
 ## Introduction
 * Responsive web design
 * Built member sytsem with Facebook Login 
