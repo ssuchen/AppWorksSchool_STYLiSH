@@ -209,8 +209,6 @@ function shopListrrender() {
     let trashsite = document.querySelectorAll(".trash-can");
     let obj = trashsite[i].parentNode.parentNode.id;
 
-    //console.log(obj)
-
     function removelocal() {
       alert("已從購物車移除" + title);
       listArray.splice(obj, 1);
