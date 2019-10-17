@@ -9,55 +9,55 @@
   </head>
 
   <body>
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"></script>
-      <div class="title">
-        <div class="title-logo-phone">
-          <img class="title-logo-small" src="img/logo.png" alt="" />
-          <a href="#" class="search-btn search-btn-mobile"
-            ><img src="img/search.png" alt="" />
-          </a>
-
-<div class="search-bar-close">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"></script>
+    <div class="title">
+      <div class="title-logo-phone">
+        <img class="title-logo-small" src="img/logo.png" alt="" />
+        <a href="#" class="search-btn search-btn-mobile">
+          <img src="img/search.png" alt="" />
+        </a>
+        <div class="search-bar-close">
   <div class="search-bar" action="">
             <input type="text" class="searchText" id="searchText-tab"/>
             <a href="#" class="search-btn-site search-btn search-btn-tab"
               ><img src="img/search.png" alt="" />
             </a>
           </div>
-</div>
-          
-        </div>
-        <div class="title-left">
-          <img class="title-logo" src="img/logo.png" alt="" />
-          <ul class="title-list">
-            <li><a href="#" class="Women-clothing">女裝</a></li>
-            <li><a href="#" class="Men-clothing">男裝</a></li>
-            <li><a href="#" class="Accessories">配件</a></li>
-          </ul>
-        </div>
-
-        <ul class="title-right">
-          <li>
-            <div class="search-bar" action="">
-              <input type="text" class="searchText-web" id="searchText-web" />
-              <a href="#" class="search-btn search-btn-web"
-                ><img src="img/search.png" alt="" />
-              </a>
-            </div>
-          </li>
-          <li class="">
-            <div class="cart-icon">
-              <a href="cardpage.html">
-                <img src="img/cart.png" alt="" />
-               <div class="cart-total cart-list-conut cart-total-hide"></div>
-              </a>  
-            </div>
-          </li>
-          <li class="member-icon"><a href="userpage.html"><img src="img/member.png" alt="" /></a></li> </li>
+        </div>         
+      </div>
+      <div class="title-left">
+        <img class="title-logo" src="img/logo.png" alt="" />
+        <ul class="title-list">
+          <li><a href="index.html?id=women" class="Women-clothing">女裝</a></li>
+          <li><a href="index.html?id=men" class="Men-clothing">男裝</a></li>
+          <li><a href="index.html?id=accessories" class="Accessories">配件</a></li>
         </ul>
-
-        <div class="shopping-bar">
+      </div>
+      <ul class="title-right">
+        <li>
+          <div class="search-bar" action="">
+            <input type="text" class="searchText-web" id="searchText-web" />
+            <a href="#" class="search-btn search-btn-web">
+              <img src="img/search.png" alt="" />
+            </a>
+          </div>
+        </li>
+        <li class="">
+          <div class="cart-icon">
+            <a href="cardpage.html">
+              <img src="img/cart.png" alt="" />
+              <div class="cart-total cart-list-conut cart-total-hide"></div>
+            </a>  
+          </div>
+        </li>
+        <li class="member-icon">
+          <a href="userpage.html">
+            <img src="img/member.png" alt="" />
+          </a>
+        </li>
+      </ul>
+      <div class="shopping-bar">
           <ul>
             <li class="cart-mobile-icon">
               <a href="cardpage.html">
@@ -74,9 +74,9 @@
               </a>
             </li>
           </ul>
-        </div>
       </div>
-      <div class="userpage-content">
+    </div>
+    <div class="userpage-content">
         <div class="userCard">
             <div class="user-bg">
               <div class="user-content">
@@ -93,14 +93,13 @@
                   data-auto-logout-link="true" data-use-continue-as="false" 
                   scope="email" onlogin="window.location.reload(true);"></div>
                    </div>
-                </div>
-               
+                </div>               
         </div> 
     </div>
-      </div>
-      <div class="clear-fix"></div>
     </div>
-      <div class="footer">
+    <div class="clear-fix"></div>
+    </div>
+    <div class="footer">
         <div class="footer-width">
           <ul class="footer-content">
             <div class="footer-list">
@@ -120,14 +119,14 @@
               <a class="line-logo" href=""><img src="img/line.png" alt=""/></a>
             </li>
             <li>
-              <a class="twitter-logo" href=""
-                ><img src="img/twitter.png" alt=""
-              /></a>
+              <a class="twitter-logo" href="">
+                <img src="img/twitter.png" alt=""/>
+              </a>
             </li>
             <li>
-              <a class="facebook-logo" href=""
-                ><img src="img/facebook.png" alt=""
-              /></a>
+              <a class="facebook-logo" href="">
+                <img src="img/facebook.png" alt=""/>
+              </a>
             </li>
             <li><p>© 2018. All rights reserved.</p></li>
           </ul>
@@ -135,13 +134,9 @@
             <p>© 2018. All rights reserved.</p>
           </div>
         </div>
-      </div>
-    <!-- </div> -->
+    </div>
+   <script src="js/all.js"></script>
+   <script src="js/cardpage.js"></script>
+   <script src="js/user.js"></script>
   </body>
-<script src="js/all.js"></script>
-<script src="js/cardpage.js"></script>
-<script src="js/user.js"></script>
-
-
-  <!-- <script src="js/produce.js"></script> -->
 </html>
