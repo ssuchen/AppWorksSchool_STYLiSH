@@ -299,17 +299,16 @@ searchBtnTab.addEventListener("click", searchContent, false);
 //=======web版 篩選===============================================
 function searchContentWeb(e) {
   e.preventDefault();
+  let searchText = document.querySelector("#searchText-web");
+  //撈到使用者的輸入
+  let textvalue = searchText.value;
   //抓到網址的query string
-  let searchString = location.href;
+  let searchString = location.href + "?id=" + textvalue;
   //將字串轉成url
   let searchUrl = new URL(searchString);
   //找到id後方的字串
   searchvalue = searchUrl.searchParams.get("id");
-
   //選定id事件
-  let searchText = document.querySelector("#searchText-web");
-  //撈到使用者的輸入
-  let textvalue = searchText.value;
 
   //點選連結
   function ajaxLine(textinput) {
@@ -330,7 +329,6 @@ function searchContentWeb(e) {
 }
 
 //=======tab版 篩選=======
-
 function searchContent(e) {
   e.preventDefault();
   //選定id事件
